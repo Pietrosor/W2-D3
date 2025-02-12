@@ -143,6 +143,29 @@ const eyeColor = { blue: [], yellow: [], brown: [], red: [], blueGray: [] }
      (al valore della sua proprietà "eye_color").
   */
 
+for (let i = 0; i < starWarsCharacters.length; i++) {
+  switch (starWarsCharacters[i].eye_color) {
+    case "blue":
+      eyeColor.blue.push(starWarsCharacters[i])
+      break
+    case "yellow":
+      eyeColor.yellow.push(starWarsCharacters[i])
+
+      break
+    case "brown":
+      eyeColor.brown.push(starWarsCharacters[i])
+      break
+    case "red":
+      eyeColor.red.push(starWarsCharacters[i])
+      break
+    case "blueGray":
+      eyeColor.blueGray.push(starWarsCharacters[i])
+      break
+    default:
+      console.log("ERRORE")
+  }
+}
+
 /* ESERCIZIO 6
     Usa un while loop per calcolare la massa totale dell'equipaggio.
      Salvala in una variabile chiamata "crewMass".
@@ -172,11 +195,11 @@ console.log("La massa totale è " + crewMass)
 
 if (crewMass < 500) {
   console.log("Ship is under loaded")
-} else if (500 > crewMass > 700) {
+} else if ((500 > crewMass, crewMass > 700)) {
   console.log("Ship is half loaded")
-} else if (700 > crewMass > 900) {
+} else if ((700 > crewMass, crewMass > 900)) {
   console.log("Warning: Load is over 700")
-} else if (900 > crewMass > 1000) {
+} else if ((900 > crewMass, crewMass > 1000)) {
   console.log("Critical Load: Over 900")
 } else if (crewMass > 1000) {
   console.log("DANGER! OVERLOAD ALERT: escape from ship now!")
@@ -205,5 +228,6 @@ console.log(starWarsCharacters)
   */
 
 /* --EXTRA-- ESERCIZIO 10
-    Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
+    Crea una funzionalità che selezioni un elemento casuale dall'array
+     "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
   */
